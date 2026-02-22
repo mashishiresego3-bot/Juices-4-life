@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juices 4 Life - Ultimate Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to bottom, #76c7c0, #ffb142);
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .hero {
+            background: url('path/to/juice-hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            margin: 15px;
+            padding: 10px;
+            width: calc(30% - 30px);
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .testimonials {
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+        }
+        .contact {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #76c7c0;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .product {
+                width: calc(48% - 30px);
+            }
+        }
+        @media (max-width: 480px) {
+            .product {
+                width: calc(100% - 30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Juices 4 Life</h1>
+        <p>Your ultimate destination for natural homemade juices!</p>
+    </header>
+    <div class="hero"></div>
+    <div class="products">
+        <div class="product">
+            <h2>Orange Juice</h2>
+            <p>Rich in vitamin C, boosts immune system.</p>
+        </div>
+        <div class="product">
+            <h2>Green Juice</h2>
+            <p>Packed with leafy greens, helps digestion.</p>
+        </div>
+        <div class="product">
+            <h2>Berry Smoothie</h2>
+            <p>Loaded with antioxidants, great for skin health.</p>
+        </div>
+    </div>
+    <div class="testimonials">
+        <h2>What our customers say:</h2>
+        <p>"The best juices I've ever had! Highly recommend!"</p>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>WhatsApp: <a href="https://wa.me/2713591296">071 359 1296</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2026 Juices 4 Life - Made with love in Kimberley, Northern Cape</p>
+    </footer>
+</body>
+</html>
