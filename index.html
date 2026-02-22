@@ -3,288 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juices for Life - Natural Homemade Juices | Kimberley</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Juices 4 Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #28a745;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav {
+            margin: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #28a745;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <i class="fas fa-leaf"></i>
-                    <span>Juices for Life</span>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#products" class="nav-link">Products</a></li>
-                    <li><a href="#order" class="nav-link">Order Now</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+    <header>
+        <h1>Welcome to Juices 4 Life</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Our Delicious Juices</h2>
+            <img src="image-url-of-juice.jpg" alt="Juice">
+            <p>Enjoy our wide variety of natural juices...</p>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Fresh, Natural Juices Delivered to Your Door</h1>
-            <p>Handpicked fresh fruits, homemade with love in Kimberley, Northern Cape</p>
-            <button class="btn btn-primary" onclick="scrollToSection('order')">Order Now</button>
+        <div class="card">
+            <h2>Fresh Ingredients</h2>
+            <img src="image-url-of-ingredients.jpg" alt="Ingredients">
+            <p>We use only the freshest ingredients...</p>
         </div>
-        <div class="hero-image">
-            <i class="fas fa-apple-alt"></i>
-            <i class="fas fa-orange"></i>
-            <i class="fas fa-lemon"></i>
+        <div class="card">
+            <h2>Order Online</h2>
+            <p>Order your favorite juice from the comfort of your home.</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Why Choose Juices for Life?</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <i class="fas fa-seedling"></i>
-                    <h3>100% Natural</h3>
-                    <p>No preservatives, no additives. Just pure, fresh juice made from handpicked fruits.</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-home"></i>
-                    <h3>Homemade Quality</h3>
-                    <p>Crafted with love in our kitchen using traditional recipes and premium ingredients.</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3>Locally Sourced</h3>
-                    <p>Supporting local farmers in Kimberley, Northern Cape with ethically sourced fruits.</p>
-                </div>
-                <div class="about-card">
-                    <i class="fas fa-truck"></i>
-                    <h3>Fresh Delivery</h3>
-                    <p>Quick delivery to ensure your juice is as fresh as possible when it reaches you.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2>Our Products</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image orange">
-                        <i class="fas fa-orange"></i>
-                    </div>
-                    <h3>Orange Sunrise</h3>
-                    <p>Pure freshly squeezed orange juice - vitamin C boost in every sip</p>
-                    <span class="price">R45 - 1L</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image green">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Green Vitality</h3>
-                    <p>Apple, celery, and ginger blend for a refreshing green juice experience</p>
-                    <span class="price">R55 - 1L</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image red">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Pomegranate Power</h3>
-                    <p>Antioxidant-rich pomegranate juice for optimal health</p>
-                    <span class="price">R60 - 1L</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image mixed">
-                        <i class="fas fa-flask-vial"></i>
-                    </div>
-                    <h3>Tropical Mix</h3>
-                    <p>Mango, pineapple, and passion fruit - a taste of paradise</p>
-                    <span class="price">R50 - 1L</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image pink">
-                        <i class="fas fa-strawberry"></i>
-                    </div>
-                    <h3>Berry Bliss</h3>
-                    <p>Strawberry and blueberry blend - delicious and nutritious</p>
-                    <span class="price">R55 - 1L</span>
-                </div>
-                <div class="product-card">
-                    <div class="product-image yellow">
-                        <i class="fas fa-lemon"></i>
-                    </div>
-                    <h3>Lemon Fresh</h3>
-                    <p>Pure lemon juice - perfect for detox and digestive health</p>
-                    <span class="price">R40 - 1L</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Order Section -->
-    <section id="order" class="order-section">
-        <div class="container">
-            <h2>Place Your Order</h2>
-            <div class="order-wrapper">
-                <div class="order-form-container">
-                    <form id="orderForm" class="order-form">
-                        <div class="form-group">
-                            <label for="customerName">Your Name *</label>
-                            <input type="text" id="customerName" required placeholder="Enter your full name">
-                        </div>
-                        <div class="form-group">
-                            <label for="customerPhone">Phone Number *</label>
-                            <input type="tel" id="customerPhone" required placeholder="Enter your 10-digit phone number">
-                        </div>
-                        <div class="form-group">
-                            <label for="customerEmail">Email (Optional)</label>
-                            <input type="email" id="customerEmail" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="deliveryAddress">Delivery Address *</label>
-                            <textarea id="deliveryAddress" required placeholder="Enter your delivery address in Kimberley"></textarea>
-                        </div>
-
-                        <div class="products-selection">
-                            <label>Select Products *</label>
-                            <div id="productsCheckbox" class="checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="product" value="Orange Sunrise - R45">
-                                    Orange Sunrise - R45
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="product" value="Green Vitality - R55">
-                                    Green Vitality - R55
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="product" value="Pomegranate Power - R60">
-                                    Pomegranate Power - R60
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="product" value="Tropical Mix - R50">
-                                    Tropical Mix - R50
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="product" value="Berry Bliss - R55">
-                                    Berry Bliss - R55
-                                </label>
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="product" value="Lemon Fresh - R40">
-                                    Lemon Fresh - R40
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="specialRequests">Special Requests (Optional)</label>
-                            <textarea id="specialRequests" placeholder="Any special requests or allergies?"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="deliveryDate">Preferred Delivery Date *</label>
-                            <input type="date" id="deliveryDate" required>
-                        </div>
-
-                        <div class="order-summary">
-                            <h4>Order Summary</h4>
-                            <div id="summaryItems"></div>
-                            <div class="total">
-                                <strong>Total: R<span id="totalPrice">0</span></strong>
-                            </div>
-                        </div>
-
-                        <button type="button" class="btn btn-success" onclick="sendOrderWhatsApp()">
-                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
-                        </button>
-                    </form>
-                </div>
-
-                <div class="tracking-container">
-                    <h3>Track Your Order</h3>
-                    <div class="tracking-form">
-                        <label for="trackingId">Enter Order ID</label>
-                        <input type="text" id="trackingId" placeholder="e.g., JFL-2026-001">
-                        <button type="button" class="btn btn-primary" onclick="trackOrder()">Track Order</button>
-                    </div>
-                    <div id="trackingResult" class="tracking-result" style="display: none;">
-                        <h4>Order Status</h4>
-                        <div class="status-timeline">
-                            <div class="status-item">
-                                <div class="status-circle completed" id="status-received"></div>
-                                <div class="status-label">Order Received</div>
-                            </div>
-                            <div class="status-item">
-                                <div class="status-circle" id="status-prepared"></div>
-                                <div class="status-label">Being Prepared</div>
-                            </div>
-                            <div class="status-item">
-                                <div class="status-circle" id="status-out"></div>
-                                <div class="status-label">Out for Delivery</div>
-                            </div>
-                            <div class="status-item">
-                                <div class="status-circle" id="status-delivered"></div>
-                                <div class="status-label">Delivered</div>
-                            </div>
-                        </div>
-                        <p id="trackingMessage" class="tracking-message"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Location</h3>
-                    <p>Kimberley<br>Northern Cape, South Africa</p>
-                </div>
-                <div class="contact-card">
-                    <i class="fab fa-whatsapp"></i>
-                    <h3>WhatsApp</h3>
-                    <p><a href="https://wa.me/27671234567" target="_blank">+27 67 123 4567</a></p>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Phone</h3>
-                    <p><a href="tel:+27671234567">+27 67 123 4567</a></p>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p><a href="mailto:info@juicesforlife.co.za">info@juicesforlife.co.za</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Juices for Life. All rights reserved. | Handmade with <i class="fas fa-heart"></i> in Kimberley, Northern Cape</p>
-            <div class="social-links">
-                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Juices 4 Life. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
+    <script>
+        // Smooth scroll to sections
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
